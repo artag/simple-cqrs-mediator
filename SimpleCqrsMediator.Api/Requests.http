@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:5248
+@apiVersion = 1.0
+@todoId = 1
+
+### Get All Todos
+GET {{baseUrl}}/api/v{{apiVersion}}/todos
+Accept: application/json
+
+### Get Todo by Id
+GET {{baseUrl}}/api/v{{apiVersion}}/todos/{{todoId}}
+Accept: application/json
+
+### Create Todo
+POST {{baseUrl}}/api/v{{apiVersion}}/todos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Implement Simple CQRS Mediator",
+  "description": "Create lightweight CQRS mediator without using MediatR library"
+}
+
+### Update Todo
+PUT {{baseUrl}}/api/v{{apiVersion}}/todos/{{todoId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Implement Simple CQRS Mediator",
+  "description": "Create lightweight CQRS pattern with custom mediator implementation to replace MediatR",
+  "isCompleted": false
+}
+
+### Toggle Todo Completion
+PATCH {{baseUrl}}/api/v{{apiVersion}}/todos/{{todoId}}/toggle
+Accept: application/json
+
+### Delete Todo
+DELETE {{baseUrl}}/api/v{{apiVersion}}/todos/{{todoId}}
+Accept: application/json 
