@@ -4,6 +4,8 @@ This project demonstrates a lightweight implementation of the CQRS pattern with 
 
 ## Overview
 
+Копия статьи из medium [локально здесь](/doc/article.md)
+
 Based on the article [The Easiest Way to Replace MediatR](https://medium.com/@paveluzunov/the-easiest-way-to-replace-mediatr-cb6a0fa07ded), this project implements:
 
 - A custom mediator that supports commands and queries
